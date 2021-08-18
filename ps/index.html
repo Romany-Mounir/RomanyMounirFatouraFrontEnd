@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // var salstr;
+    // var arrsal = [];
+    // for (let index = 0; index < 5; index++) {
+    //     var salary = parseFloat(prompt("enter salary", salstr))
+    //     arrsal.push(salary);
+
+    // }
+
+    // let sumarr = arrsal.reduce((a, b) => a + b, 0);
+    // // var arraySum = sum(arrsal);
+    // let avergnum = sumarr / arrsal.length;
+    // let sumofelem = 0;
+    // for (let index = 0; index < arrsal.length; index++) {
+    //     if (arrsal[index] >= avergnum) {
+    //         sumofelem += 1;
+    //     }
+
+    // }
+    // console.log(sumofelem)
+
+
+
+
+
+
+    let t = 3;
+    let n = t;
+    let p = [n * t];
+    let sumofposib1 = 3
+    let sumofposib2 = 0
+
+    let sumofposib3 = 0
+
+    for (let index = 1; index < 3; index++) {
+        console.log(sumofposib1)
+
+        for (let J = 1; J < 3; J++) {
+            sumofposib2 += 1;
+
+        }
+
+    }
+    console.log(sumofposib2)
+    console.log(sumofposib2-sumofposib1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
+
+B. The End Of Every Day
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+As you know Ashraf's company is still small but it's productive!!, at the end of every day, only k products remain so Ashraf is in the same task every day and he tries to sell them with the maximum total price.
+
+n buyers come to Ashraf every buyer offers a price for every product trying to buy all of the k products but Ashraf can sell to every buyer zero or more of the remaining products.
+
+Ashraf will sell the products in a way such that every product i (1≤i≤k) is sold to exactly one buyer. i.e Every product will be sold exactly once.
+
+Given n arrays each of size k, every array representing the prices of the k products offered by this buyer.
+
+you have to print the number of different ways that Ashraf can sell the k products with the highest possible sum.
+
+two ways are considered different if some product i, (1≤i≤k) is sold to a different buyer.
+
+Input
+You have to answer multiple scenarios. The first line contains the number of scenarios t (1≤t≤100). Description of every scenario follows.
+
+The first line of each scenario consists of two space-separated positive integers n and k (1≤n≤10,1≤k≤10) where n is number of buyers and k is number of the products.
+
+Then You're given n lines, In every line, you're given k integers ai (1≤ai≤109) where ai represent the offer for the i−th product.
+
+Output
+for every scenario print the number of ways.
+
+It's guaranteed that the answer fits in a 64−bit integer.
+
+Examples
+inputCopy
+3
+3 3
+1 2 4
+2 3 4
+3 4 4
+2 2
+3 3
+3 3
+2 3
+1 2 3
+3 4 5
+outputCopy
+3
+4
+1
+inputCopy
+1
+4 4
+1 2 3 4
+2 2 4 2
+2 3 4 4
+2 3 3 4
+outputCopy
+36
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+C. The Maximum Profit
+time limit per test1 second
+memory limit per test256 megabytes
+inputstandard input
+outputstandard output
+Ashraf love analysis and he always tries to use all the data to optimize the process of selling the products and increasing the profit.
+
+Ashraf has the data of the last n days, for every day i (1≤i≤n) the value ai is the profit in the i−th day.
+
+Ashraf believes that if for some consecutive days the sum of the profits is less than or equal to k then he has to do some changes in the company, so Ashraf was wondering for every day i what is the maximum day j (i≤ j≤n) such that the sum of profits between i and j is less than or equal to k.
+
+can you help Ashraf to solve this task?
+
+Input
+You have to answer multiple scenarios. The first line contains the number of scenarios t (1≤t≤105). Description of every scenario follows.
+
+The first line of each scenario consists of two space-separated positive integers n and k (1≤n≤105,1≤k≤109) where n is number of days and k is the integer in the problem.
+
+In the second line, you're given n integers ai (1≤ai≤k) where ai represent the profit of the i−th day.
+
+it's guaranteed the sum of n over all the scenarios is ≤3⋅105
+Output
+for every scenario print n space separated integers in one line,
+
+for every index i the the maximum index j such that Sum(i,j) ≤ k.
+
+Example
+inputCopy
+3
+5 10
+1 2 4 5 1
+4 10
+2 2 2 4
+5 5
+5 5 5 5 5
+outputCopy
+3 3 5 5 5 
+4 4 4 4 
+1 2 3 4 5 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+D. The Hiring Process
+time limit per test4 seconds
+memory limit per test512 megabytes
+inputstandard input
+outputstandard output
+ِAshraf wants to hire a smart software engineer. He Believe that people who can solve counting problems are smart.
+
+Let's define P(n) = multiplication of the digits of n , and S(n) = sum of the digits of n.
+
+Given two positive integers a and b. Find the number of different n such that P(n) = a and S(n) = b.
+
+Input
+The first line contains one integer T — the number of test cases.
+
+The following T lines each line contains two integers a and b. (1≤a,b≤104).
+
+Output
+For each test case, output the required answer on a single line.
+
+Example
+inputCopy
+4
+3 5
+4 7
+8 10
+7 7
+outputCopy
+3
+14
+68
+1
