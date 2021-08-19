@@ -3,7 +3,7 @@ import "firebase/auth";
 import "firebase/storage";
 import "firebase/firestore";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseApp = firebase.initializeApp({
+export const firebaseApp = firebase.initializeApp({
   apiKey: "AIzaSyCnZnUx_BzFNlyKDfF8T6oFHVInZDhCTvg",
   authDomain: "codenames-dc114.firebaseapp.com",
   projectId: "codenames-dc114",
@@ -16,5 +16,5 @@ const firebaseApp = firebase.initializeApp({
 
 
 const db = firebaseApp.firestore();
-export {db};
-export default firebaseApp;
+export  {db};
+// export default firebaseApp;
